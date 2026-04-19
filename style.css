@@ -1,0 +1,124 @@
+/*Cuerpo*/
+body{
+    background-color: cadetblue;
+    margin: 0%;
+    display: grid;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    background-color: brown;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    position: top;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    display: inline-block;
+    width: 100%;
+    height: 6rem;
+}
+.content{
+    flex: 12;
+}
+.space{
+    flex: 0;
+}
+/*Contenido Perfil*/
+.perfil{
+    background-color:white;
+}
+.banner{
+    background-color: red;
+    display: block;
+    position: top;
+    top: 0;
+    z-index: 1000;
+    margin: 0%;
+    padding: 0%;
+    height: 285px;
+}
+.fotoperfil{
+    display: flex;
+  justify-content: center;
+  border-radius: 100px white;
+}
+#Pperfil{
+    width: 50%;
+    margin-top: -25%;
+  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 100px white;
+}
+.NamePerfil{
+    display: flex;
+  justify-content: center;
+}
+#Banner{
+  max-height: 100%; 
+  height: auto;
+  display: block;
+}
+.basic{
+}
+.info{
+}
+.friends{
+}
+/*Contenido Publicación*/
+.publicacion{
+    border-top: 2px solid rgb(94, 94, 94);
+    border-bottom: 2px solid rgb(94, 94, 94);
+}
+.public-content{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 2px solid rgb(94, 94, 94);
+}
+
+@media screen and (min-width: 700px){
+    /*Cuerpo*/
+    body{
+        background-color: blue;
+    margin: 0%;
+    display: grid;
+    }
+    
+    .main{
+        background-color: aqua;
+        display: block;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+        height: 70px;
+    }
+    .container{
+        background-color: blueviolet;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    span{
+        width: 300px;
+    }
+    .space{
+        flex: 2;
+    }
+    .content{
+        flex: 8;
+        flex-basis: 600px;
+    }
+    /*Contenido Perfil*/
+}
