@@ -71,6 +71,11 @@ span{
 .texto-negrita {
     font-weight: bold;
 }
+#Banner{
+    max-height: 100%; 
+    height: auto;
+    display: block;
+}
 .info{
     margin: 0;
     background-color:white;
