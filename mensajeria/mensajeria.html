@@ -11,56 +11,53 @@
 
 <div class="app">
 
-  <!-- HEADER -->
   <div class="header">
     <h2>Chats</h2>
   </div>
 
   <div class="main">
 
-    <!-- LISTA DE CHATS -->
+    <!-- LISTA -->
     <div class="chat-list">
       
-
-      <div class="chat" onclick="abrirChat('sosa')" >
-        <div><img class="prfl1" src="ArcangelUriel-Perfil.jpg" alt="" ></div>
+      <a href="#sosa" class="chat">
+        <img class="prfl1" src="ArcangelUriel-Perfil.jpg">
         <span>Sosa</span>
-      </div>
+      </a>
 
-      <div class="chat" onclick="abrirChat('esther')">
-        <div><img class="prfl1" src="Levi.jpeg" alt="" ></div>
+      <a href="#esther" class="chat">
+        <img class="prfl1" src="Levi.jpeg">
         <span>Pantufla powers</span>
-      </div>
+      </a>
 
-      <div class="chat" onclick="abrirChat('emilio')">
-        <div><img class="prfl1" src="PatoMago.jpeg" alt="" ></div>
+      <a href="#emilio" class="chat">
+        <img class="prfl1" src="PatoMago.jpeg">
         <span>Emilio</span>
-      </div>
+      </a>
 
     </div>
 
     <!-- CHAT SOSA -->
-    <div class="chat-view" id="sosa" >
+    <div class="chat-view" id="sosa">
       <div class="chat-header">
-        
-        <button onclick="cerrarChat()">⬅</button>
+        <a href="#" class="back">⬅</a>
         Sosa
       </div>
-      
+
       <div class="messages">
         <div class="msg left">Saca el maicra</div>
         <div class="msg right">De one</div>
       </div>
 
       <div class="input">
-        <input placeholder="Escribe...">
+        <input placeholder="Escribe..." disabled>
       </div>
     </div>
 
     <!-- CHAT ESTHER -->
     <div class="chat-view" id="esther">
       <div class="chat-header">
-        <button onclick="cerrarChat()">⬅</button>
+        <a href="#" class="back">⬅</a>
         Pantufla powers
       </div>
 
@@ -70,14 +67,14 @@
       </div>
 
       <div class="input">
-        <input placeholder="Escribe...">
+        <input placeholder="Escribe..." disabled>
       </div>
     </div>
 
     <!-- CHAT EMILIO -->
     <div class="chat-view" id="emilio">
       <div class="chat-header">
-        <button onclick="cerrarChat()">⬅</button>
+        <a href="#" class="back">⬅</a>
         Emilio
       </div>
 
@@ -87,24 +84,13 @@
       </div>
 
       <div class="input">
-        <input placeholder="Escribe...">
+        <input placeholder="Escribe..." disabled>
       </div>
     </div>
 
   </div>
 
 </div>
-
-<script>
-function abrirChat(id) {
-  document.querySelectorAll('.chat-view').forEach(c => c.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-}
-
-function cerrarChat() {
-  document.querySelectorAll('.chat-view').forEach(c => c.classList.remove('active'));
-}
-</script>
 
 </body>
 </html>
