@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mensajería</title>
+<link rel="stylesheet" href="mensajeria.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>Chats</h2>
+  </div>
+
+  <div class="main">
+
+    <!-- LISTA DE CHATS -->
+    <div class="chat-list">
+      
+
+      <div class="chat" onclick="abrirChat('sosa')" >
+        <div><img class="prfl1" src="ArcangelUriel-Perfil.jpg" alt="" ></div>
+        <span>Sosa</span>
+      </div>
+
+      <div class="chat" onclick="abrirChat('esther')">
+        <div><img class="prfl1" src="Levi.jpeg" alt="" ></div>
+        <span>Pantufla powers</span>
+      </div>
+
+      <div class="chat" onclick="abrirChat('emilio')">
+        <div><img class="prfl1" src="PatoMago.jpeg" alt="" ></div>
+        <span>Emilio</span>
+      </div>
+
+    </div>
+
+    <!-- CHAT SOSA -->
+    <div class="chat-view" id="sosa" >
+      <div class="chat-header">
+        
+        <button onclick="cerrarChat()">⬅</button>
+        Sosa
+      </div>
+      
+      <div class="messages">
+        <div class="msg left">Saca el maicra</div>
+        <div class="msg right">De one</div>
+      </div>
+
+      <div class="input">
+        <input placeholder="Escribe...">
+      </div>
+    </div>
+
+    <!-- CHAT ESTHER -->
+    <div class="chat-view" id="esther">
+      <div class="chat-header">
+        <button onclick="cerrarChat()">⬅</button>
+        Pantufla powers
+      </div>
+
+      <div class="messages">
+        <div class="msg left">Me pusieron los cuernos</div>
+        <div class="msg right">jajajajaa</div>
+      </div>
+
+      <div class="input">
+        <input placeholder="Escribe...">
+      </div>
+    </div>
+
+    <!-- CHAT EMILIO -->
+    <div class="chat-view" id="emilio">
+      <div class="chat-header">
+        <button onclick="cerrarChat()">⬅</button>
+        Emilio
+      </div>
+
+      <div class="messages">
+        <div class="msg left">😂😂😂</div>
+        <div class="msg right">valio</div>
+      </div>
+
+      <div class="input">
+        <input placeholder="Escribe...">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function abrirChat(id) {
+  document.querySelectorAll('.chat-view').forEach(c => c.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function cerrarChat() {
+  document.querySelectorAll('.chat-view').forEach(c => c.classList.remove('active'));
+}
+</script>
+
+</body>
+</html>
