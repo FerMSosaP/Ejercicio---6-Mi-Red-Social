@@ -335,7 +335,8 @@ span{
 
     /*Contenido Publicación*/
     #public-perfil{
-        width: 8%;
+        width: 100px;
+        height: 100px;
         margin: 5px;
         margin-right: 15px;
         border-radius: 50%;
@@ -344,20 +345,13 @@ span{
 
     /*Contenido Comentarios*/
     #coment-perfil{
-    width: 10%;
+    width: 66px;
+    height: 66px;
     margin: 5px;
     margin-right: 5px;
     border-radius: 50%;
     object-fit: cover;
     flex: 1;
-    }
-    #respond-perfil{
-    width: 10%;
-    height: 10%;
-    margin: 5px;
-    margin-right: 5px;
-    border-radius: 50%;
-    object-fit: cover;
     }
 
     .coment{
