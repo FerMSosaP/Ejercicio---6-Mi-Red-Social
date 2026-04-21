@@ -1,355 +1,221 @@
-/*Cuerpo*/
-body{
-    background-color: rgb(208, 208, 227);
-    margin: 0%;
-    display: grid;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
 }
-.main{
-    background-color: brown;
-    display: block;
-    position: -webkit-sticky;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+.inicial{
     position: sticky;
-    position: top;
     top: 0;
-    z-index: 1000;
-    height: 80px;
+    background: #ddd;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #999;
 }
 .container{
     display: flex;
-    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
 }
-span{
-    display: inline-block;
-    width: 100%;
-    height: 6rem;
-}
-.content{
-    flex: 12;
-}
-.space{
-    flex: 0;
-}
-.sangria{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-/*Contenido Perfil*/
-.banner{
-    background-color: red;
-    display: block;
-    position: top;
-    top: 0;
-    z-index: 1000;
-    margin: 0%;
-    padding: 0%;
-    height: 285px;
-}
-#Banner{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-.basic{
-    padding: 0%;
-}
-.perfil-basic{
-    background-color:white;
-}
-.fotoperfil{
-    display: flex;
-  justify-content: center;
-}
-#Pperfil{
-    width: 50%;
-    margin-top: -30%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 10px solid white;
-}
-.text-perfil{
+.feed{
+    flex: 2;
     display: flex;
     justify-content: center;
 }
-.texto-negrita {
-    font-weight: bold;
-}
-#Banner{
-    max-height: 100%; 
-    height: auto;
-    display: block;
-}
-.info{
-    margin: 0;
-    padding: 2%;
-    background-color:white;
-}
-.PerfilTitulo{
-    display: inline-block;
-}
-.friends-space{
-    background-color:white;
-}
-.friends-cards{
-    display: flex;
-    padding: 3px;
-    margin: 3px;
-    align-items: center;
-}
-#Fperfil{
-    width: 90%;
-    border-radius: 25%;
-    object-fit: cover;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    align-items: center;
-}
-.Ftext-perfil{
-    display: block;
-    text-align: center;
-    margin: 1px;
-}
-.fichaperfil{
-        padding: 1%;
-        margin-left: 5%;
-    }
-.friends{
-    flex: 1;
-    width: 130px;
-    height: 200px;
-    text-align: center;
-}
-
-/*Contenido Publicación*/
-.publicacion{
-    border-top: 2px solid  rgb(169, 169, 191);
-    border-bottom: 2px solid  rgb(169, 169, 191);
-}
-.public-content{
-    background-color:white;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border: 2px solid  rgb(169, 169, 191);
-}
-.public-content-perfil{
-    display: flex;
-    padding: 3px;
-    margin: 3px;
-    align-items: center;
-}
-#public-perfil{
-    width: 20%;
-    margin: 5px;
-    margin-right: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-#public-img{
+.post{
     width: 100%;
-    object-fit: cover;
+    max-width: 500px;
+    background: #fff;
+    border: 2px solid #999;
+    padding: 15px;
+
 }
-.image{
-    display: contents;
+.comment{
+   display: flex;
+   margin-top: 15px;
+   gap: 10px;
 }
-.line-separator{
-    border-top: 2px solid rgb(197, 197, 197);
-}
-.botons-bar{
-    display: flex;
+.comment-avatar{
+    width: 40px;
     height: 40px;
-}
-.botons{
-    height: 80%;
-    text-align: center;
-    padding-top: 2%;
-    border-left: 2px solid rgb(197, 197, 197);;
-} 
-#coment-perfil{
-    width: 10%;
-    margin: 5px;
-    margin-right: 5px;
     border-radius: 50%;
     object-fit: cover;
-    flex: 1;
 }
 
-.coment{
+.comment-content {
+    width: 100%;
+}
+
+.comment-box {
+    background: #e4e6eb;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.comment-box strong {
+    display: block;
+    font-size: 14px;
+}
+
+.comment-actions {
+    font-size: 12px;
+    color: #65676b;
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.comment-actions span {
+    cursor: pointer;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+
+.abrir {
+    flex: 1;
+    border: 2px solid #999;
+    padding: 10px;
+    background: #fff;
     display: flex;
     flex-direction: column;
-    margin: 15px;
-}
-.coment-resp{
-    margin-left: 10%;
-    width: 50%;
-}
-.text-coment{
-    display: inline-block;
-    margin: 5px;
-    padding: 3%;
-    border-radius: 10%;
-    background-color: rgb(242, 242, 242);
-    flex: 3;
-}
-.TC{
-    margin: 0%;
-    margin-top: 5px;
+    height: 80vh;
 }
 
-@media screen and (min-width: 700px){
-    /*Cuerpo*/
-    body{
-    background-color: rgb(208, 208, 227);
-        margin: 0%;
-        display: grid;
-    }
-    
-    .main{
-        background-color: aqua;
-        display: block;
-        position: -webkit-sticky;
-        position: sticky;
-        position: top;
-        top: 0;
-        z-index: 1000;
-        height: 60px;
-    }
-    .container{
-        flex-direction: row;
-    }
-    span{
-        width: 300px;
-    }
-    .space{
-        flex: 4;
-        max-height: 100%;
-        max-width: 100%;
-    }
-    .content{
-        flex: 9;
-        flex-basis: 600px;
-    }
+.chat-header {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-    /*Contenido Perfil*/
-    .banner{
-        background-color: red;
-        display: flex;
-        position: top;  
-        z-index: 1000;
-        margin: 0%;
-        padding: 0%;
-        height: 400px;
-        width: auto;
-    }
-    #Banner{
-        max-height: 100%; 
-        height: auto;
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .basic{
-        padding: 0%;
-    }
-    .perfil-basic{
-        background-color:white;
-        display: flex;
-        flex-direction: column;
-    }
-    .perfil{
-        padding: 0%;
-    }
-    .fotoperfil{
-        display: flex;
-        justify-content: left;
-        width: 200px;
-        height: 200px;
-        margin-left: 5%;
-    }
-    #Pperfil{
-        width: 100%;
-        margin: 2%;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    .perfil-card{
-        display: flex;
-    }
-    .text-perfil{
+.chat-search input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #eef0f3;
+}
+
+.chat-filters {
     display: flex;
-    flex-direction: column; 
-    }
-    .fichaperfil{
-        padding: 1%;
-        margin-left: 5%;
-    }
+    gap: 10px;
+    padding: 10px;
+}
 
-    .friends-cards{
+.chat-filters span {
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.chat-filters .active {
+    background: #e7f3ff;
+    color: #1877f2;
+}
+
+.unread-dot {
+    width: 10px;
+    height: 10px;
+    background: #1877f2;
+    border-radius: 50%;
+    margin-left: auto;
+}
+.chat-list {
+    overflow-y: auto;
+    flex: 1;
+}
+
+
+.chat-item {
     display: flex;
-    flex-direction: row;
-    padding: 3px;
-    margin: 3px;
     align-items: center;
-    }
-    #Fperfil{
-    width: 45%;
-    border-radius: 25%;
-    object-fit: cover;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    align-items: center;
-    }
-    .friends{
-        flex: 1;
-        width: 200px;
-        height: 210px;
-        text-align: center;
-    }
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
 
-    /*Contenido Publicación*/
-    #public-perfil{
-        width: 8%;
-        margin: 5px;
-        margin-right: 15px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+.chat-item:hover {
+    background: #f0f2f5;
+}
 
-    /*Contenido Comentarios*/
-    #coment-perfil{
-    width: 10%;
-    margin: 5px;
-    margin-right: 5px;
+.chat-item.active {
+    background: #e4e6eb;
+    border-radius: 10px;
+}
+.chat-avatar {
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    flex: 1;
-    }
-
-    .coment{
-        display: flex;
-        flex-direction: column;
-        margin: 15px;
-    }
-    .coment-resp{
-        margin-left: 10%;
-        width: 50%;
-    }
-    .text-coment{
-        display: inline-block;
-        margin: 5px;
-        padding: 3%;
-        border-radius: 10%;
-        background-color: rgb(242, 242, 242);
-        flex: 3;
-    }
-    .TC{
-        margin: 0%;
-        margin-top: 5px;
-    }
-
 }
+
+
+.chat-info p {
+    font-size: 13px;
+    color: #65676b;
+}
+
+
+.chat-search {
+    padding: 10px;
+}
+
+.chat-user {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-btn {
+     position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #25D366; 
+    color: white;
+
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    font-size: 18px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #999;
+}
+
+@media (max-width: 768px) {
+
+    .post {
+        max-width: 100%;
+    }
+
+  .feed{
+    padding: 0;
+  }
+}
+
+
