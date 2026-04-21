@@ -47,6 +47,12 @@ span{
     padding: 0%;
     height: 285px;
 }
+#Banner{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
 .basic{
     padding: 0%;
 }
@@ -73,6 +79,7 @@ span{
 }
 .info{
     margin: 0;
+    padding: 2%;
     background-color:white;
 }
 .PerfilTitulo{
@@ -101,10 +108,15 @@ span{
     text-align: center;
     margin: 1px;
 }
+.fichaperfil{
+        padding: 1%;
+        margin-left: 5%;
+    }
 .friends{
     flex: 1;
     width: 130px;
     height: 200px;
+    text-align: center;
 }
 
 /*Contenido Publicación*/
@@ -131,14 +143,6 @@ span{
     border-radius: 50%;
     object-fit: cover;
 }
-#coment-perfil{
-    width: 10%;
-    margin: 5px;
-    margin-right: 5px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex: 1;
-}
 #public-img{
     width: 100%;
     object-fit: cover;
@@ -159,10 +163,23 @@ span{
     padding-top: 2%;
     border-left: 2px solid rgb(197, 197, 197);;
 } 
+#coment-perfil{
+    width: 10%;
+    margin: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 1;
+}
 
 .coment{
     display: flex;
+    flex-direction: column;
     margin: 15px;
+}
+.coment-resp{
+    margin-left: 10%;
+    width: 50%;
 }
 .text-coment{
     display: inline-block;
@@ -262,7 +279,72 @@ span{
     flex-direction: column; 
     }
     .fichaperfil{
+        padding: 1%;
         margin-left: 5%;
+    }
+
+    .friends-cards{
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    margin: 3px;
+    align-items: center;
+    }
+    #Fperfil{
+    width: 45%;
+    border-radius: 25%;
+    object-fit: cover;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    }
+    .friends{
+        flex: 1;
+        width: 200px;
+        height: 210px;
+        text-align: center;
+    }
+
+    /*Contenido Publicación*/
+    #public-perfil{
+        width: 8%;
+        margin: 5px;
+        margin-right: 15px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /*Contenido Comentarios*/
+    #coment-perfil{
+    width: 10%;
+    margin: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 1;
+    }
+
+    .coment{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .coment-resp{
+        margin-left: 10%;
+        width: 50%;
+    }
+    .text-coment{
+        display: inline-block;
+        margin: 5px;
+        padding: 3%;
+        border-radius: 10%;
+        background-color: rgb(242, 242, 242);
+        flex: 3;
+    }
+    .TC{
+        margin: 0%;
+        margin-top: 5px;
     }
 
 }
